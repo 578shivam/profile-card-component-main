@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      padding: 0px;
+      margin: 0px;
+    }
+    body{
+      
+      background-color:#19a1ad;
+      font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "YOPQ" 300;
+
+    }
+    .container{
+      width: 350px;
+      height: 400px;
+      margin: 20px;
+      background-color: white;
+      border-radius: 10px;
+      margin: 20vh 79vh;
+
+    }
+    .background-image img{
+      width: 350px;
+      height: 130px;
+      border-radius: 10px 10px 0px 0px;
+    }
+    .profile{
+      display: flex;
+      justify-content: center;
+    }
+    .profile img{
+      border-radius: 50%;
+    border: solid 6px white;
+    position: relative;
+    bottom: 46px;
+    }
+    .text-1{
+      text-align: center;
+      margin-top: -2rem;
+    }
+    .text-1 h1{
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .flex-text1{
+      display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }
+    .flex-text1 h1{
+      font-size: 18px;
+      
+    }
+    .flex-text2{
+      display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 9px;
+    }
+    .text-1 p{
+      margin-bottom: 30px;
+      color: #aaa9ac;
+    }
+    .flex-text2 p{
+      font-size: 12px;
+      color: #aaa9ac;
+    }
+   hr{
+    margin-bottom: 20px;
+    color: #aaa9ac;
+   }
+   .text-1 span{
+    color: #aaa9ac;
+    font-weight:100;
+   }
+    .top{
+      position: absolute;
+    top: -34rem;
+    right: 51rem;
+    }
+    .bottom{
+          
+    position: absolute;
+    top: 32rem;
+    right: -7rem;
+    }
+    @media (width <600px) {
+      .container{
+        margin: 10vh 9vh;
+      }
+      .top{
+        position: absolute;
+        left: -40rem;
+        top: -45rem;
+      }
+      .bottom{
+        position: absolute;
+        right: -36rem;
+        top: 28rem;
+      }
+
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="top">
+    <img src="images/bg-pattern-top.svg" alt="">
+  </div>
+<div class="container">
+  <div class="background-image">
+    <img src="images/bg-pattern-card.svg" alt="">
+  </div>
+  <div class="profile">
+    <img src="images/image-victor.jpg" alt="">
+  </div>
+  <div class="text-1">
+    <h1>Victor Cresr <span>26</span></h1>
+    <p>London</p>
+  </div>
+  <hr>
+  <div class="flex-text1">
+    <h3>80k</h3>
+    <h3>803k</h3>
+    <h3>1.4k</h3>
+  </div>
+  <div class="flex-text2">
+    <p>Followers</p>
+    <p>Likes</p>
+    <p>Photos</p>
+  </div> 
+</div>
+<div class="bottom">
+  <img src="images/bg-pattern-bottom.svg" alt="">
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
